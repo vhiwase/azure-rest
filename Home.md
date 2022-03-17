@@ -1,0 +1,1 @@
+This repo is here to provide samples, tip-and-tricks and scripts to help you use the Azure REST APIs.
