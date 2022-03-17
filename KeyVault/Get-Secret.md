@@ -11,7 +11,7 @@ You need the following Azure resources in place to use the Key Vault system.
 1. **Key Vault - Secret**: Contains a Secret Value
 1. **Key Vault - Policy**: Grants 'Secret Get Permission' to Service Principal
 
-![](KeyVault/Assets/key-vault-design.png)
+![](https://github.com/vhiwase/azure-rest/tree/master/KeyVault/Assets/key-vault-design.png)
 
 ## REST API Authorization
 
@@ -145,7 +145,7 @@ You can run the following in the [Azure Cloud Shell](https://azure.microsoft.com
     resource:https://vault.azure.net
     ```
 
-    ![](KeyVault/Assets/key-vault-postman-output.png)
+    ![](https://github.com/vhiwase/azure-rest/tree/master/KeyVault/Assets/key-vault-postman-output.png)
 
 
     
@@ -157,27 +157,27 @@ You can run the following in the [Azure Cloud Shell](https://azure.microsoft.com
 1. Create a new Environment called Azure Key Vault
     1. Click 'Gear Icon -> Manage Environment'
 
-        ![](KeyVault/Assets/key-vault-create-env.png)
+        ![](https://github.com/vhiwase/azure-rest/tree/master/KeyVault/Assets/key-vault-create-env.png)
 
     1. Click 'Add', Enter Azure Key Vault for name
 
-        ![](KeyVault/Assets/key-vault-create-env-name.png)
+        ![](https://github.com/vhiwase/azure-rest/tree/master/KeyVault/Assets/key-vault-create-env-name.png)
 
 1. Copy Variables to Environment
     1. Click 'Bulk Edit'
     1. Copy Variable output from above:
 
-        ![](KeyVault/Assets/key-vault-create-env-variables.png)
+        ![](https://github.com/vhiwase/azure-rest/tree/master/KeyVault/Assets/key-vault-create-env-variables.png)
 
     1. Click 'Add'
 1. Select Azure Key Vault Environment
     1. Click the Environment dropdown in the upper right and select Azure Key Vault
 
-        ![](KeyVault/Assets/key-vault-create-env-select.png)
+        ![](https://github.com/vhiwase/azure-rest/tree/master/KeyVault/Assets/key-vault-create-env-select.png)
 
 1. Create a new Collection called Azure Key Vault
 
-    ![](KeyVault/Assets/key-vault-create-collection.png)
+    ![](https://github.com/vhiwase/azure-rest/tree/master/KeyVault/Assets/key-vault-create-collection.png)
 
 1. Add Collection Pre-Request Script to get Bearer Token
 
@@ -205,7 +205,7 @@ You can run the following in the [Azure Cloud Shell](https://azure.microsoft.com
         });
     ```
 
-    ![](KeyVault/Assets/key-vault-pre-request-script.png)
+    ![](https://github.com/vhiwase/azure-rest/tree/master/KeyVault/Assets/key-vault-pre-request-script.png)
 
 1. Create a new Request called Get Secret with the following settings:
 
@@ -215,7 +215,7 @@ You can run the following in the [Azure Cloud Shell](https://azure.microsoft.com
     Authorization: Bearer {{bearerToken}}
     Content-Type: application/json
     ```
-    ![](KeyVault/Assets/key-vault-postman-get-secret.png)
+    ![](https://github.com/vhiwase/azure-rest/tree/master/KeyVault/Assets/key-vault-postman-get-secret.png)
 
 1. Save that Request to the Azure Key Vault Collection
 1. Click "Send"
@@ -235,6 +235,6 @@ You can run the following in the [Azure Cloud Shell](https://azure.microsoft.com
         }
     }
     ```
-    ![](KeyVault/Assets/key-vault-get-secret-response.png)
+    ![](https://github.com/vhiwase/azure-rest/tree/master/KeyVault/Assets/key-vault-get-secret-response.png)
 
 1. Use the Secret in your application by wrapping the REST calls above in your favorite language.
